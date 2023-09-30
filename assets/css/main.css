@@ -2364,7 +2364,9 @@ input, select, textarea {
 			/* Media query for smaller screens (e.g., mobile devices) */
 			@media screen and (max-width: 767px) {
 				.image-container image {
-				margin-bottom: 5px; /* Adjust the margin for smaller screens */
+					flex-direction: column; /* Stack items vertically */
+   					align-items: center; /* Center items horizontally */
+					margin-bottom: 5px; /* Adjust the margin for smaller screens */
 				}
 			}
 
