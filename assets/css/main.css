@@ -2362,7 +2362,7 @@ input, select, textarea {
 		}
 
 			/* Media query for smaller screens (e.g., mobile devices) */
-			@media (max-width: 767px) {
+			@media screen and (max-width: 767px) {
 				.image-container image {
 				margin-bottom: 5px; /* Adjust the margin for smaller screens */
 				}
@@ -2395,6 +2395,29 @@ input, select, textarea {
 				}
 
 			}
+		.mobile-only
+		{
+			display: none;
+		}
+
+		.desktop-only
+		{
+			display: block;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.mobile-only
+		{
+			display: block;
+		}
+
+		.desktop-only
+		{
+			display: none;
+		}
+
+		}
 
 
 
