@@ -68,208 +68,102 @@
 					<section>
 						<span class="image left"><img src="../images/pinball.png" alt="" /></span>
 
-						<h2>About the Engine</h2>
-						<p>Separaty Engine is a game engine developed by our class in year 3 of <i>UPC: Videogame Design
-								and
-								Development Degree</i>
-							which objective was to serve as, apart from learning the basic elements that a game engine
-							must
-							have,as a platform to develop a basic particle system in order to prepare for our upcoming
-							project, currently known as <i><a href="../pages/gotg.html">Guardians of the Galaxy:
-									Battle for the Universe</a></i>. <br><br>
-							The engine is based on a full Entity Component System similar to Unity, and it's meant to
-							support basic elements in an engine, such as asset management, a hierarchy to access
-							gameobjects, inspector to edit gameobjects, 3D rendering, saving and loading information
-							using
-							json serialization and our custom Particle System.</p>
-						<br>
-						<h2>Contributions</h2>
+						<h2>About the Project</h2>
 						<p>
-							The engine was build almost from the ground up by me along with <b><a
-									href="https://github.com/GerardMartinez02">GerardMartinez02</a></b> as part of our
-							studies in the degree <i>Videogame Design and
-								Development</i> at UPC.
+							In this project our team was asked to replicate a pinball browser game from the internet.
+							Our team chose the game <i>Space Adventure</i>, a pinball game that can be found in many
+							game webpages. It
+							is
+							characterized by having a space-themed background, interactables and sounds.
+						</p>
+						<p>
+							The main objective when making this game was to develop it by using <b>Box2D</b>, a 2D
+							phisics library, in c++, in order to learn how to use and implement its features into a
+							real, playable game.
 						</p>
 
-						<h2>About the engine</h2>
-						<i>Separaty Engine</i> was developed as in order to learn the fundamental aspects that make up a
-						game engine. This includes the options to save, load and change settings of the engine,
-						importing
-						assets such as 3D models and textures, a hierarchy to manipulate game objects, or an inspector,
-						among other elements detailed below.
+						<p>
+							This project was made along side with <b><a
+									href="https://github.com/rastabrandy02">rastabrandy02</a></b> and <b><a
+									href="https://github.com/fakefarreraspol">fakefarreraspol</a></b>.
+						</p>
 						<br>
 						<br>
-						<span class="image fit"><img src="../images/separaty/full_view.png" alt="" />
-							<div class="center">Full view of the Editor</div>
-							<br>
-							<h3>Top left menu</h3>
-							The top left menu has many options distributed in the sections <i>File</i>, <i>Edit</i>,
-							<i>Game
-								Object</i>, <i>Window</i> and <i>Help</i>. Within these menus, the buttons in white
-							serve
-							their described function, while the ones marked in gray are placeholders for features that
-							didn't make it in the end.
-							<br>
-							<br>
-							<span class="image right"><img src="../images/separaty/menu_1.png" alt="" /></span>
-							<h3>File</h3>
-							<b>New Scene</b>: Creates a new scene within the engine. <br>
-							<b>Save</b>: Saves the current scene. <br>
-							<b>Load</b>: Loads the data of a scene from the computer's memory. <br>
-							<b>Exit</b>: Closes the application. <br>
-							<br>
-							<br>
-							<span class="image right"><img src="../images/separaty/menu_2.png" alt="" /></span>
-							<h3>Edit</h3>
-							<b>Preferences...</b>: Opens the <i>Preferences</i> window, where the user can changes
-							settins
-							from the User Interface, the Window of the application and the FOV of the camera. <br>
-							<b>Show Application Data</b>: Opens the <i>Show Application Data</i> window, where the user
-							can
-							see
-							information about the application's name, organization, framerate, hardware and the devices'
-							inputs in real time. <br>
-							<br>
-							<br>
-							<br>
-							<br>
+						<h2>Features</h2>
+						<span class="image left"><img src="../images/space_adventure/pinball_parts.png" alt="" />
+						</span>
 
-							<span class="image right"><img src="../images/separaty/menu_3.png" alt="" /></span>
-							<h3>Game Object</h3>
-							<b>Create Empty</b>: Creates a game object with basic components and data.<br>
-							<b>Create Primitives</b>: Shows a list of buttons "<i>Cube, Sphere, Capsule, Cylinder,
-								Pyramid,
-								Cone, Plane</i>". Upon pressing one, it creates a game object with the mesh described
-							and
-							basic material, among with other basic components. <br>
-							<b>Effects</b>: Creates a game object called Particle Emitter with the components associated
-							with the particle emitter and system. <br>
-							<b>Light & Audio</b>: Show placeholder buttons for adding light and audio related game
-							objects.
-							<br>
-							<b>Camera</b>: Creates a game object named Camera with the Camera components. <br>
-							<br>
-							<br>
-							<br>
-							<br>
+						<br>
+						<b>1.</b> The stars represents the total points the player has managed to obtain. Reaching a
+						high score will grant you an extra ball! The
+						number of tries left is marked by the remaining balls.
+						<br>
+						<b>2.</b> The colored capsules are interactable elements that turn on when the ball passes
+						through them. If all capsules are lighted, extra points are awarded!
+						<br>
+						<b>3.</b> These ufo-shaped bumpers grant points whenever the ball touches them. They also eject
+						the ball on contact.
+						<br>
+						<b>4.</b> These side mini-bumbers, light on on contact as well. Turn all 5 of them on to unlock
+						an extra lateral bumper!
+						<br>
+						<b>5.</b> These big red bumpers serve to strategically launch the ball through the map. They
+						grant no points on contact.
+						<br>
+						<b>6.</b> This is the ball launcher. Hold [Down] to compress the string. Upon releasing it, the
+						more compressed it is, the more it will launch the ball!
+						<br>
+						<b>7.</b> These are the main flippers. Move them with the lateral arrows to spin them and smack
+						the ball back in the map!
+						<br>
+						<br>
+						<br>
+						<br>
 
-							<span class="image right"><img src="../images/separaty/menu_4.png" alt="" /></span>
-							<h3>View</h3>
-							<b>Render Options</b>: Toggling On or Off these buttons change how the elements are drawn in
-							the
-							scene, affecting the <i>Ambient Occlusion</i>, <i>Color Material</i>, <i>Face Culling</i>,
-							aplying of <i>Depth Test</i>,
-							<i>Lightning</i> or setting the view in <i>Wireframe</i> mode.
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
+						<h2>My Contribution</h2>
+						<p>In this project I was an active developer along with my peers, where I worked on:</p>
+						- The flippers' behavior. <br>
+						- Big and Mini bumpers. (Behavior and Animations). <br>
+						- Capsule combo. (Behavior and Animations). <br>
+						- Fonts & Pause UI elements. <br>
+						- Main game looping. <br>
+						- High Score system. <br>
 
-							<span class="image right"><img src="../images/separaty/menu_5.png" alt="" /></span>
-							<h3>Window</h3>
-							Here can be opened the windows <i>Hierarchy</i>, <i>Inspector</i>, <i>Assets</i>,
-							<i>Output</i>,
-							<i>Play & Stop</i> and indivigual <i>Play & Stop</i> windows in case they are closed.
+						<div class="center">
+							<h2>Gameplay Example</h2>
+						</div>
+
+						<span>
+							<div class="center"><iframe width="100%" height="720"
+									src="https://www.youtube.com/embed/8A_nGdKNuXI">
+								</iframe></div>
 							<br>
-							<br>
-							<br>
-							<br>
+							<div class="center"><a href="https://www.youtube.com/embed/8A_nGdKNuXI"><b>Space Adventure
+										Gameplay</b></a></div>
+						</span>
 
 
-							<span class="image right"><img src="../images/separaty/menu_6.png" alt="" /></span>
-							<h3>Help</h3>
-							In this section the user can see the details of the Engine, such as the creators and their
-							contacts, the libraries used in theengine and its License. <br>
-							There is also a section to report bugs and make comments about the engine.
+						<p>
+						<h3>Try it!</h3>
 
-							<br>
-							<br>
-							<br>
-							<br>
 
-							<h1>Main Features</h1>
-							<h2>the hierarchy</h2>
+						Download the project from GitHub <b><a
+								href="https://github.com/rastabrandy02/SpaceAdventure_Pinball/releases/tag/v1.0">here</a></b>!
+						</p>
 
-							<span class="image left"><img src="../images/separaty/hierarchy.png" alt="" /></span>
-							The hierarchy is the place where all game objects are ordered and visible for the user to
-							select
-							and modify.
+						<br>
+						<h3>Disclaimer</h3>
+						While we call it a "recreation" of the original game "Space Adventures", it does not contain all
+						the features that the original game had. The game was selected as a frame for us to practice the use of the
+						library Box2D, and then we picked the features to recreate that best allowed us to use the different available
+						features that the library had.
 
-							Each game object has 3 buttons associated: <br>the <i>Name</i>, the <i>Delete Button</i>,
-							and
-							the <i>Create Child</i>, marked in blue, red and green respectively: <br>
-							<span class="image left"><img src="../images/separaty/gameobject.png" alt="" /></span>
 
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<h2>The Inspector</h2>
-							<span class="image left"><img src="../images/separaty/inspector.png" alt="" /></span>
-							The inspector holds the components of the game objects. Here it is possible to edit its
-							<i>Name</i> (shown in green) and components.
-							<br>
-							<br>
-							The basic components of a game object are the <b>Transform</b>, the <b>Mesh Renderer</b> and
-							its <b>Texture</b>.
 
-							<br><br>
-							Other components include: <br><br>
-							<span class="image left"><img src="../images/separaty/comp_camera.png" alt="" />
-								<div class="left">Camera Component</div>
-							</span><br><br><br><br><br><br>
-							<span class="image left"><img src="../images/separaty/comp_particle_emitter.png" alt="" />
-								<div class="left">Particle Emitter Component</div>
-							</span><br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
 
-							<h2>The Output</h2>
-							<span class="image left"><img src="../images/separaty/output.png" alt="" /></span>
-							This window shows messages created in the internal code. It show messages when assets are
-							imported and created, as well as other data that may be relevant. This was useful to see
-							processes while developing the engine.
 
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
 
-							<div class="center">
-								<h2>Usage Example</h2>
-							</div>
 
-							<span>
-								<div class="center"><iframe width="100%" height="720"
-										src="https://www.youtube.com/embed/srtbUYAsCgs">
-									</iframe></div>
-								<br>
-								<div class="center"><a href="https://www.youtube.com/embed/srtbUYAsCgs"><b>Separaty
-											Engine
-											Demo</b></a></div>
-							</span>
-
-							<h3>Try it!</h3>
-							Download the project from GitHub <b><a
-									href="https://github.com/IconicGIT/Separaty_Engine/releases/tag/Assignment3">here</a></b>!
-							<br>
-							<br>
-							<br>
-							<h3>Disclaimer</h3>
-							This project had the objective to learn about the basic elements that conform an engine,
-							which
-							is the support for importing assets, creating scenes, add, edit and work with game objects
-							and
-							additionally, the creation of a basic particle system. There are many details that weren't
-							added
-							due to time constraints or because they were non-essential for the main objective of the
-							project.
 
 				</div>
 
